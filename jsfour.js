@@ -1,32 +1,32 @@
-let purpleX = 150;
-let purpleY = 150;
-let radPurple = 29;
+let purpleX = 150; // x центра круга
+let purpleY = 150; // y центра круга
+let radPurple = 29; // радиус круга
 
-let pointX, pointY; // coordinate of click
+let pointX, pointY; // координаты клика
 
-let colorSet = ['lime', 'blue', 'yellow'];
-let color = 0;
+let colorSet = ['lime', 'blue', 'yellow']; // цвета заливки круга
+let color = 0; // текущий индекс в colorSet
 
-let distanceFromCenter;
+let distanceFromCenter; // расстояние от клика до центра круга
 
-let message = " ";
+let message = " "; // текст статуса на canvas
 
-let toRight = false;
-let toLeft = false;
-let toUp = false;
-let toDown = false;
+let toRight = false; // удерживается вправо: клавиша или кнопка
+let toLeft = false; // удерживается влево: клавиша или кнопка
+let toUp = false; // удерживается вверх: клавиша или кнопка
+let toDown = false; // удерживается вниз: клавиша или кнопка
 
-let basePixelsX;
-let basePixelsY;
+let basePixelsX; // рабочий x при расчёте угла клика
+let basePixelsY; // рабочий y при расчёте угла клика
 
-let limitCooficentX = 2;
-let limitCooficentY = 2;
+let limitCooficentX = 2; // максимальный шаг по x за кадр
+let limitCooficentY = 2; // максимальный шаг по y за кадр
 
-let calcCooficentX;
-let calcCooficentY;
+let calcCooficentX; // фактический шаг по x к точке клика
+let calcCooficentY; // фактический шаг по y к точке клика
 
-let calcPointX;
-let calcPointY;
+let calcPointX; // смещение клика по x от центра круга
+let calcPointY; // смещение клика по y от центра круга
 
 
 window.addEventListener('keyup', keyUpBool, false);
